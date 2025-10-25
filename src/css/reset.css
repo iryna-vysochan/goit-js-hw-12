@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -6,13 +17,11 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -25,6 +34,7 @@ a {
 
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 
 img {
